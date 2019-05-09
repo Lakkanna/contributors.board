@@ -6,6 +6,36 @@
   line-height: 1.5;
 }
 
+.side {
+  width: 30%;
+}
+.row {
+  display: flex;
+}
+
+.content {
+  background: #fafbfc;
+  line-height: 1.5;
+}
+
+.content-text {
+  font-size: 16px !important;
+  font-family: ubuntu;
+}
+
+.pagehead {
+  border-bottom: 1px solid #e1e4e8;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  position: relative;
+  height: 60px;
+}
+
+.repohead .repohead-details-container {
+  margin-bottom: 20px;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;

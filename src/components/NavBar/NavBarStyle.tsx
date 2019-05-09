@@ -1,4 +1,5 @@
 import styledComponents from "styled-components";
+import styled from "styled-components";
 
 const Wrapper = styledComponents.div`
   position: relative!important;
@@ -56,11 +57,11 @@ const NavLink = styledComponents.div`
   }
 `;
 
-const WhiteIcon = styledComponents.span`
-  color: #FFF;
-  font-size: 20px;
-  size: 16px;
+const NoDecor = styled.a`
+  text-decoration: none;
+  color: inherit;
 `;
+
 export {
   Wrapper,
   Header,
@@ -69,5 +70,5 @@ export {
   HeaderItemFull,
   NavLinkWrapper,
   NavLink,
-  WhiteIcon
+  NoDecor
 };
