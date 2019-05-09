@@ -15,7 +15,7 @@ const Contributors: React.FC = () => {
     return (
       <ul>
         {
-          contributors.map(contributor => <li> {`${contributor.firstName} ${contributor.lastName}`} </li>)
+          contributors.map(contributor => <li key={contributor.firstName}> {`${contributor.firstName} ${contributor.lastName}`} </li>)
         }
       </ul>
     );
