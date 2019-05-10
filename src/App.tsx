@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from './components/NavBar/NavBar';
-import Contributors from "./components/Contributors/Contributors";
+import Repositories from "./components/Repositories/Repositories";
 import './App.css';
 
 const App: React.FC = () => {
@@ -23,7 +23,7 @@ const App: React.FC = () => {
           <div className="col-sm-1 side">
           </div>
           <div className="col-sm-8 content-text">
-            <Contributors />
+            <Repositories />
           </div>
           <div className="col-sm-1 side">
           </div>
