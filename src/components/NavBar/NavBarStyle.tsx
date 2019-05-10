@@ -1,14 +1,13 @@
-import styledComponents from "styled-components";
 import styled from "styled-components";
 
-const Wrapper = styledComponents.div`
+const Wrapper = styled.div`
   position: relative!important;
   background: #23282e;
   height: 64px;
   color: #FFF;
 `;
 
-const Header = styledComponents.div`
+const Header = styled.div`
   align-items: center;
   display: flex;
   flex-wrap: nowrap;
@@ -20,7 +19,7 @@ const Header = styledComponents.div`
   z-index: 32;
 `;
 
-const HeaderTitle = styledComponents.span`
+const HeaderTitle = styled.span`
   font-family: hack;
   font-size: 16px;
   font-weight: 600;
@@ -30,7 +29,7 @@ const HeaderTitle = styledComponents.span`
   }
 `;
 
-const HeaderItem = styledComponents.header`
+const HeaderItem = styled.header`
   align-items: center;
   display: flex;
   flex-wrap: nowrap;
@@ -38,16 +37,16 @@ const HeaderItem = styledComponents.header`
   margin-right: 16px;
 `;
 
-const HeaderItemFull = styledComponents.div`
+const HeaderItemFull = styled.div`
   ${HeaderItem};
   flex: auto;
 `;
 
-const NavLinkWrapper = styledComponents.div`
+const NavLinkWrapper = styled.div`
   display: flex!important;
 `;
 
-const NavLink = styledComponents.div`
+const NavLink = styled.div`
   margin-right: 16px;
   color: #fff;
   font-weight: 600;
