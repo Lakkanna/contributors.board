@@ -1,6 +1,26 @@
 import styled from "styled-components";
 import { Card } from "@material-ui/core";
 
+const Container = styled.div`
+  font-family: "ubuntu", font-weight: 600
+`;
+
+const TitleWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const Title = styled.span`
+  color: #00000099;
+  font-size: x-large;
+`;
+
+const BadgeWrapper = styled.div`
+  display: flex;
+  justify-content: flex-start;
+`;
+
 const LinkWrapper:any = styled.a`
   text-decoration: none;
   color: inherit;
@@ -15,6 +35,10 @@ const CardWrapper: any = styled(Card)`
 `;
 
 export {
+  Container,
+  TitleWrapper,
+  Title,
+  BadgeWrapper,
   LinkWrapper,
   CardWrapper
 }

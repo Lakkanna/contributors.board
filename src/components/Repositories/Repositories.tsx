@@ -12,8 +12,11 @@ export interface IRepositories {
   created_at: string;
   description: string;
   stargazers_count: number;
+  forks_count: number;
+  watchers_count: number;
   owner: avatar,
   html_url: string;
+  language: string;
 }
 
 interface State {
@@ -49,7 +52,18 @@ export default class Repositories extends React.Component<{}, {}> {
       <React.Fragment>
       {
         this.state.publicRepositories.map((repo: IRepositories) => {
-          return <RepositoryCard avatar={repo.owner.avatar_url} name={repo.name} description={repo.description} url={repo.html_url} />
+          return (
+            <RepositoryCard
+              avatar={repo.owner.avatar_url}
+              name={repo.name}
+              description={repo.description}
+              url={repo.html_url}
+              stars={repo.stargazers_count}
+              forks={repo.forks_count}
+              watchers={repo.watchers_count}
+              language={repo.language}
+            />
+          )
         })
       }
       </React.Fragment>
